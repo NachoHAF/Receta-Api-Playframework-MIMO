@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/nacho/Desktop/receta/app/models/AuthorProfile.java:80:1: 不兼容的类型: java.lang.Long无法转换为java.lang.String[0m
+[0m[[0m[31merror[0m] [0m[0mphone[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/nacho/Desktop/receta/app/models/AuthorProfile.java:84:1: 不兼容的类型: java.lang.String无法转换为@play.data.validation.Constraints.Required(message="Required_phone") java.lang.Long[0m
+[0m[[0m[31merror[0m] [0m[0mphone[0m

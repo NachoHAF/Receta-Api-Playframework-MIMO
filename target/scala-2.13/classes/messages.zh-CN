@@ -1,0 +1,52 @@
+#messages for models
+Required_author_name = 请填写作者用户名！
+Required_author_profile = 请填写作者的个人资料！
+Required_name_real = 请填写作者的真实姓名！
+Required_email = 请填写电子邮件！
+Required_phone = 请填写电话号码！
+Required_direction = 请填写联系地址！
+Required_category_name = 请填写菜单类别名称！
+Required_name_ingredient = 请填写原材料名称！
+Required_recipe_name = 请填写食谱名称！
+Required_category = 请选择相应的类别！
+Required_author = 请选择相应的作者！
+
+
+#messages for controllers
+Repeat_category = 要创建的菜单类别已经存在！
+Saved_category = 菜单类别已成功创建并保存！
+No_category_list = 找不到任何菜单类别列表！
+No_category = 找不到此菜单类别！
+No_found_update = 所选待更新的菜单类别不存在，但是您可以创建一个新的！
+Already_exist = 要更新的菜单类别已经存在！
+Success_update = 成功更新！
+No_found_delete = 找不到要删除的数据！
+Deleted = 成功删除！
+No_exist_this_category = 选择的菜单类别不存在！
+No_exist_recipes = 此菜单类别下没有食谱！
+
+Repeat_author = 要创建的作者已经存在！
+Saved_author = 作者已成功创建并保存！
+No_author_list = 找不到任何作者！
+No_author = 找不到该作者！
+Already_exist_author = 要更新的作者已经存在！
+No_exist_this_author = 搜索的作者不存在！
+No_exist_recipes_author =该作者没有创建的食谱！
+
+Repeat_ingredient = 要创建的配料已经存在！
+Saved_ingredient = 配料已成功创建并保存！
+No_ingredient_list = 找不到任何配料清单！
+No_ingredient = 找不到这种配料！
+Already_exist_ingredient = 要更新的配料已经存在！
+No_exist_this_ingredient = 搜索的配料不存在！
+No_exist_recipes_ingredient = 没有包含这个配料的食谱！
+
+Repeat_recipe = 要创建的食谱已经存在！
+Check_exist_category = 菜单类别不存在！
+Check_exist_author = 作者不存在！
+Check_exist_ingredient = 配料不存在！
+Saved_recipe = 食谱已成功创建并保存！
+No_recipe_list = 找不到任何食谱清单！
+No_recipe = 找不到这个食谱！
+No_changed = 无需更改数据，无需更新！
+Duplicate_ingredient = 重复一种或多种配料！

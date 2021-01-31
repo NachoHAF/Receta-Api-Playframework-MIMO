@@ -1,0 +1,54 @@
+#messages for models
+Required_author_name = Please fill in the author's name
+Required_author_profile = Please fill in the author's personal information
+Required_name_real = Please fill in the real name of the author
+Required_email = Please fill in the email
+Required_phone = Please fill in the phone number
+Required_direction = Please fill in the contact address
+Required_category_name = Please fill in the category name
+Required_name_ingredient = Please fill in the ingredient name
+Required_recipe_name = Please fill in the recipe name
+Required_category = Please fill in the corresponding category
+Required_author = Please fill in the corresponding author
+
+
+
+#messages for controllers
+Repeat_category = Category to be created already exists!
+Saved_category = Category successfully created and saved!
+No_category_list = No found any categories list!
+No_category = No found this category!
+No_found_update = Not found but you can create a new one!
+Already_exist = Category to be updated already exists!
+Success_update = Successfully updated!
+No_found_delete =The data to be deleted was not found！
+Deleted = Successfully deleted!
+No_exist_this_category = The searched category does not exist!
+No_exist_recipes = No recipes under this category!
+
+Repeat_author = Author to be created already exists!
+Saved_author = Author successfully created and saved!
+No_author_list = No found any authors list!
+No_author = No found this author!
+Already_exist_author = Author to be updated already exists!
+No_exist_this_author = The searched author does not exist!
+No_exist_recipes_author = No recipes under this author!
+
+Repeat_ingredient = Ingredient to be created already exists!
+Saved_ingredient = Ingredient successfully created and saved!
+No_ingredient_list = No found any ingredients list!
+No_ingredient = No found this ingredient!
+Already_exist_ingredient = Ingredient to be updated already exists!
+No_exist_this_ingredient = The searched ingredient does not exist!
+No_exist_recipes_ingredient = No recipes under this ingredient!
+
+Repeat_recipe = Recipe to be created already exists!
+Check_exist_category = Category does not exist！
+Check_exist_author = Author does not exist！
+Check_exist_ingredient = Ingredient does not exist！
+Saved_recipe = Recipe successfully created and saved!
+No_recipe_list = No found any recipes list!
+No_recipe = No found this recipe!
+No_changed = No data changes, no updates required！
+Duplicate_ingredient = One or more ingredients are repeated！
+

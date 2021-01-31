@@ -1,0 +1,79 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# An example controller showing a sample home page
+GET          /                                                  controllers.HomeController.index()
+GET          /api/1.0                                           controllers.HomeController.index()
+
+
+#Routes for categories
+POST        /api/1.0/categories                                 controllers.CategoryController.createCategory(request: Request)
+GET         /api/1.0/categories                                 controllers.CategoryController.showCategories(request: Request)
+GET         /api/1.0/categories/:category_name                  controllers.CategoryController.showCategory(category_name: String,request: Request)
+PUT         /api/1.0/categories/:category_name                  controllers.CategoryController.updateCategory(category_name: String,request: Request)
+DELETE      /api/1.0/categories/:category_name                  controllers.CategoryController.deleteCategory(category_name: String,request: Request)
+
+
+#Routes for recipes
+POST         /api/1.0/recipes                                   controllers.RecipeController.createRecipe(request: Request)
+GET          /api/1.0/recipes                                   controllers.RecipeController.showRecipes(request: Request)
+GET          /api/1.0/recipes/:recipe_id                        controllers.RecipeController.showRecipe(recipe_id: Long,request: Request)
+PUT          /api/1.0/recipes/:recipe_id                        controllers.RecipeController.updateRecipe(recipe_id: Long,request: Request)
+DELETE       /api/1.0/recipes/:recipe_id                        controllers.RecipeController.deleteRecipe(recipe_id: Long,request: Request)
+
+
+#Routes for categories with recipes
+
+GET  /api/1.0/categories/:category_name/recipes                 controllers.CategoryController.showRecipesForCategory(category_name: String,request: Request)
+#GET  /api/1.0/categories/:category_name/recipes/:recipe_id      controllers.CategoryController.createCategory(category_name: String,recipe_id: Long)
+
+
+#Routes for authors
+# To create authors
+POST   /api/1.0/authors                                         controllers.AuthorController.createAuthor(request: Request)
+
+# To get all authors
+GET    /api/1.0/authors                                         controllers.AuthorController.showAuthors(request: Request)
+
+# To get current author
+GET    /api/1.0/authors/:author_id                              controllers.AuthorController.showAuthor(author_id: Long,request: Request)
+
+# To update current author
+PUT  /api/1.0/authors/:author_id                              controllers.AuthorController.updateAuthor(author_id: Long,request: Request)
+
+# To delete current author
+DELETE /api/1.0/authors/:author_id                              controllers.AuthorController.deleteAuthor(author_id: Long,request: Request)
+
+#Routes for authors with recipes
+GET  /api/1.0/authors/:author_id/recipes                        controllers.AuthorController.showRecipesForAuthor(author_id: Long,request: Request)
+#GET  /api/1.0/authors/:author_id/recipes/:recipe_id            controllers.AuthorController.createAuthor(author_id: Long, recipe_id: Long)
+
+
+
+#Routes for ingredients
+# To create ingredients
+POST   /api/1.0/ingredients                                     controllers.IngredientController.createIngredient(request: Request)
+
+# To get all ingredients
+GET    /api/1.0/ingredients                                     controllers.IngredientController.showIngredients(request: Request)
+
+# To get current ingredient
+GET    /api/1.0/ingredients/:ingredient_id                      controllers.IngredientController.showIngredient(ingredient_id: Long,request: Request)
+
+# To update current ingredient
+PUT  /api/1.0/ingredients/:ingredient_id                    controllers.IngredientController.updateIngredient(ingredient_id: Long,request: Request)
+
+# To delete current ingredient
+DELETE /api/1.0/ingredients/:ingredient_id                    controllers.IngredientController.deleteIngredient(ingredient_id: Long,request: Request)
+
+
+
+#Routes for recipes with ingredients
+#GET   /api/1.0/recipes/:recipe_id/ingredients                   controllers.RecipeController.showIngredientsForRecipe(recipe_id: Long)
+GET   /api/1.0/ingredients/:ingredient_id/recipes             controllers.IngredientController.showRecipesForIngredient(ingredient_id: Long,request: Request)
+
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
