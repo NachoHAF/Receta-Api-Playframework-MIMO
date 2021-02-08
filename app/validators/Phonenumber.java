@@ -9,7 +9,7 @@ import java.lang.annotation.Target;
 @Retention(java.lang.annotation.RetentionPolicy.RUNTIME)
 @Constraint(validatedBy = PhoneNumberValidator.class)
 public @interface Phonenumber {
-    String message() default "Incorrect phone format";
+    String message() default "invalid_PhoneNumber";
     Class<?>[] groups() default {};
     Class<? extends Payload>[] payload() default {};
 }

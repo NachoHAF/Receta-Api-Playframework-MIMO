@@ -5,7 +5,10 @@ import io.ebean.Model;
 import play.data.validation.Constraints;
 import validators.Phonenumber;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
 import javax.validation.constraints.Email;
 import java.util.List;
 
@@ -24,9 +27,9 @@ public class AuthorProfile extends Model {
     @Constraints.Required(message = "Required_email")
     private String email;
 
-    //@Constraints.Required(message = "Required_phone")
-    @Phonenumber
-    private Long phone;
+    @Constraints.Required(message = "Required_phone")
+    @Phonenumber(message = "Format_number")
+    private String phone;
 
     @Constraints.Required(message = "Required_direction")
     private String direction;
@@ -76,13 +79,9 @@ public class AuthorProfile extends Model {
         this.email = email;
     }
 
-    public Long getPhone() {
-        return phone;
-    }
+    public String getPhone() { return phone; }
 
-    public void setPhone(Long phone) {
-        this.phone = phone;
-    }
+    public void setPhone(String phone) { this.phone = phone; }
 
     public String getDirection() {
         return direction;

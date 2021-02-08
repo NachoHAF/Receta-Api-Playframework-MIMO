@@ -17,7 +17,7 @@ create table authorprofiles (
   id_profile                    bigint auto_increment not null,
   name_real                     varchar(255),
   email                         varchar(255),
-  phone                         bigint,
+  phone                         varchar(255),
   direction                     varchar(255),
   constraint pk_authorprofiles primary key (id_profile)
 );

@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/nacho/Desktop/receta/conf/routes
-// @DATE:Sun Jan 31 16:40:58 CET 2021
+// @DATE:Tue Feb 09 00:48:03 CET 2021
 
 
 package router {

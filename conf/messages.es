@@ -4,6 +4,7 @@ Required_author_profile = Por favor, complete los datos personales del autor！
 Required_name_real = Por favor， complete el nombre real del autor！
 Required_email = Por favor， complete el correo electrónico！
 Required_phone = Por favor, complete el número de teléfono！
+Format_number = Por favor, complete el número de teléfono en el formato correcto! (+34 617055167 o + 0034 617055167)
 Required_direction = Por favor, complete la dirección de contacto！
 Required_category_name = Por favor, complete el nombre de la categoría！
 Required_name_ingredient = Por favor, complete el nombre del ingrediente!

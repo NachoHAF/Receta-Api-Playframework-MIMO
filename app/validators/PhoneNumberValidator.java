@@ -5,35 +5,27 @@ import play.libs.F;
 import play.libs.F.Tuple;
 
 import javax.validation.ConstraintValidator;
-import java.util.regex.Pattern;
 
 public class PhoneNumberValidator
-        extends Constraints.Validator<Long>
-        implements ConstraintValidator<Phonenumber, Long>{
+        extends Constraints.Validator<String>
+        implements ConstraintValidator<Phonenumber, String>{
 
     @Override
-    public boolean isValid(Long Phonenumber) {
-       //Long number = Phonenumber.;
-        Pattern pattern = Pattern.compile("^[0-9]*$");
-
-    if (pattern.matcher(String.valueOf(Phonenumber)).matches()){
-        return true;
-    }
-        return false;
-
-    }
-
-    @Override
-    public Tuple<String, Object[]> getErrorMessageKey() {
-        return new F.Tuple<String, Object[]>(
-                "Debe de contener solo una palabra",
+    public Tuple<String, Object[]> getErrorMessageKey () {
+        return new F.Tuple<>(
+                "Phonenumber is not valid",
                 new Object[]{""});
     }
 
     @Override
-    public void initialize(Phonenumber constraintAnnotation) {
-        // TODO Auto-generated method stub
+    public boolean isValid(String Phonenumber) {
+
+        {
+            if(Phonenumber==null){return true;}
+            return Phonenumber.matches("^(\\+\\d{1,5}) \\d{6,11}$");
+        }
+    }
 
     }
 
-}
+

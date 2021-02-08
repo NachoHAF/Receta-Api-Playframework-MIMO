@@ -4,6 +4,7 @@ Required_author_profile = 请填写作者的个人资料！
 Required_name_real = 请填写作者的真实姓名！
 Required_email = 请填写电子邮件！
 Required_phone = 请填写电话号码！
+Format_number = 请填写正确格式的电话号码!（+34 617055167 或 +0034 617055167）
 Required_direction = 请填写联系地址！
 Required_category_name = 请填写菜单类别名称！
 Required_name_ingredient = 请填写原材料名称！
