@@ -1,4 +1,0 @@
-@(recipe: Recipe)
-<recipe>
-    <recipe_name>@recipe.getRecipe_name()</recipe_name>
-</recipe>

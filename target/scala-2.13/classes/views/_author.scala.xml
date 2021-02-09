@@ -1,4 +1,0 @@
-@(author: Author)
-<author>
-    <author_name>@author.getAuthor_name()</author_name>
-</author>

@@ -1,7 +1,0 @@
-@(recipes: List[Recipe])
-<?xml version="1.0" enconding="UTF-8"?>
-<recipes>
-    @for(recipe <- recipes) {
-    @_recipe_only_name(recipe)
-    }
-</recipes>

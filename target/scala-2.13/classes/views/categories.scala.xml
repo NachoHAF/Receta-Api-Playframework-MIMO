@@ -1,7 +1,0 @@
-@(categories: List[Category])
-<?xml version="1.0" enconding="UTF-8"?>
-<categories>
-    @for(category <- categories) {
-    @_category(category)
-    }
-</categories>

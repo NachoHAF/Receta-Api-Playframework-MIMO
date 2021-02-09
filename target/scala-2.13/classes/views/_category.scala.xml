@@ -1,5 +1,0 @@
-@(category: Category)
-<category>
-   <category_name>@category.getCategory_name()</category_name>
-   <created_time>@category.getCreate_time()</created_time>
-</category>

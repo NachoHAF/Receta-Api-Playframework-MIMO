@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/nacho/Desktop/receta1/conf/routes
-// @DATE:Tue Feb 09 13:14:57 CET 2021
+// @SOURCE:/Users/nacho/Desktop/Receta-api/conf/routes
+// @DATE:Tue Feb 09 15:53:42 CET 2021
 
 package router
 
@@ -22,9 +22,9 @@ class Routes(
   RecipeController_1: controllers.RecipeController,
   // @LINE:34
   AuthorController_2: controllers.AuthorController,
-  // @LINE:56
+  // @LINE:54
   IngredientController_0: controllers.IngredientController,
-  // @LINE:79
+  // @LINE:76
   Assets_4: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
@@ -39,9 +39,9 @@ class Routes(
     RecipeController_1: controllers.RecipeController,
     // @LINE:34
     AuthorController_2: controllers.AuthorController,
-    // @LINE:56
+    // @LINE:54
     IngredientController_0: controllers.IngredientController,
-    // @LINE:79
+    // @LINE:76
     Assets_4: controllers.Assets
   ) = this(errorHandler, HomeController_5, CategoryController_3, RecipeController_1, AuthorController_2, IngredientController_0, Assets_4, "/")
 
@@ -466,7 +466,7 @@ class Routes(
     )
   )
 
-  // @LINE:56
+  // @LINE:54
   private[this] lazy val controllers_IngredientController_createIngredient19_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("api/1.0/ingredients")))
   )
@@ -487,7 +487,7 @@ class Routes(
     )
   )
 
-  // @LINE:59
+  // @LINE:57
   private[this] lazy val controllers_IngredientController_showIngredients20_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("api/1.0/ingredients")))
   )
@@ -507,7 +507,7 @@ class Routes(
     )
   )
 
-  // @LINE:62
+  // @LINE:60
   private[this] lazy val controllers_IngredientController_showIngredient21_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("api/1.0/ingredients/"), DynamicPart("ingredient_id", """[^/]+""",true)))
   )
@@ -527,7 +527,7 @@ class Routes(
     )
   )
 
-  // @LINE:65
+  // @LINE:63
   private[this] lazy val controllers_IngredientController_updateIngredient22_route = Route("PUT",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("api/1.0/ingredients/"), DynamicPart("ingredient_id", """[^/]+""",true)))
   )
@@ -547,7 +547,7 @@ class Routes(
     )
   )
 
-  // @LINE:68
+  // @LINE:66
   private[this] lazy val controllers_IngredientController_deleteIngredient23_route = Route("DELETE",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("api/1.0/ingredients/"), DynamicPart("ingredient_id", """[^/]+""",true)))
   )
@@ -567,7 +567,7 @@ class Routes(
     )
   )
 
-  // @LINE:74
+  // @LINE:71
   private[this] lazy val controllers_IngredientController_showRecipesForIngredient24_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("api/1.0/ingredients/"), DynamicPart("ingredient_id", """[^/]+""",true), StaticPart("/recipes")))
   )
@@ -582,13 +582,12 @@ class Routes(
       Seq(classOf[Long], classOf[play.mvc.Http.Request]),
       "GET",
       this.prefix + """api/1.0/ingredients/""" + "$" + """ingredient_id<[^/]+>/recipes""",
-      """Routes for recipes with ingredients
-GET   /api/1.0/recipes/:recipe_id/ingredients                   controllers.RecipeController.showIngredientsForRecipe(recipe_id: Long)""",
+      """Routes for recipes with ingredients""",
       Seq()
     )
   )
 
-  // @LINE:79
+  // @LINE:76
   private[this] lazy val controllers_Assets_versioned25_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
@@ -740,49 +739,49 @@ GET   /api/1.0/recipes/:recipe_id/ingredients                   controllers.Reci
           req => AuthorController_2.showRecipesForAuthor(author_id, req))
       }
   
-    // @LINE:56
+    // @LINE:54
     case controllers_IngredientController_createIngredient19_route(params@_) =>
       call { 
         controllers_IngredientController_createIngredient19_invoker.call(
           req => IngredientController_0.createIngredient(req))
       }
   
-    // @LINE:59
+    // @LINE:57
     case controllers_IngredientController_showIngredients20_route(params@_) =>
       call { 
         controllers_IngredientController_showIngredients20_invoker.call(
           req => IngredientController_0.showIngredients(req))
       }
   
-    // @LINE:62
+    // @LINE:60
     case controllers_IngredientController_showIngredient21_route(params@_) =>
       call(params.fromPath[Long]("ingredient_id", None)) { (ingredient_id) =>
         controllers_IngredientController_showIngredient21_invoker.call(
           req => IngredientController_0.showIngredient(ingredient_id, req))
       }
   
-    // @LINE:65
+    // @LINE:63
     case controllers_IngredientController_updateIngredient22_route(params@_) =>
       call(params.fromPath[Long]("ingredient_id", None)) { (ingredient_id) =>
         controllers_IngredientController_updateIngredient22_invoker.call(
           req => IngredientController_0.updateIngredient(ingredient_id, req))
       }
   
-    // @LINE:68
+    // @LINE:66
     case controllers_IngredientController_deleteIngredient23_route(params@_) =>
       call(params.fromPath[Long]("ingredient_id", None)) { (ingredient_id) =>
         controllers_IngredientController_deleteIngredient23_invoker.call(
           req => IngredientController_0.deleteIngredient(ingredient_id, req))
       }
   
-    // @LINE:74
+    // @LINE:71
     case controllers_IngredientController_showRecipesForIngredient24_route(params@_) =>
       call(params.fromPath[Long]("ingredient_id", None)) { (ingredient_id) =>
         controllers_IngredientController_showRecipesForIngredient24_invoker.call(
           req => IngredientController_0.showRecipesForIngredient(ingredient_id, req))
       }
   
-    // @LINE:79
+    // @LINE:76
     case controllers_Assets_versioned25_route(params@_) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
         controllers_Assets_versioned25_invoker.call(Assets_4.versioned(path, file))

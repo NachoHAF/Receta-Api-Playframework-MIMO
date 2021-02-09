@@ -1,7 +1,0 @@
-@(ingredients: List[Ingredient])
-<?xml version="1.0" enconding="UTF-8"?>
-<ingredients>
-    @for(ingredient <- ingredients) {
-    @_ingredient(ingredient)
-    }
-</ingredients>

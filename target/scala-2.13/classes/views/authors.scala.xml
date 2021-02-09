@@ -1,7 +1,0 @@
-@(authors: List[Author])
-<?xml version="1.0" enconding="UTF-8"?>
-<authors>
-    @for(author <- authors) {
-    @_author(author)
-    }
-</authors>

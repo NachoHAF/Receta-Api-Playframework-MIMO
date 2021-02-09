@@ -1,4 +1,0 @@
-@(ingredient: Ingredient)
-<ingredients>
-    <ingredient_name>@ingredient.getName_ingredient()</ingredient_name>
-</ingredients>

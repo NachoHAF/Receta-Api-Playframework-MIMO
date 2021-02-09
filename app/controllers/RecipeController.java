@@ -110,7 +110,6 @@ public class RecipeController extends Controller {
     {
         Messages messages = this.messagesApi.preferred(request);
         List<Recipe> recipeList = Recipe.allRecipes();
-        /* System.out.println(list); */
         if ( Recipe.allRecipes().isEmpty() )
         {
             return(Results.badRequest( messages.at("No_recipe_list")) );
@@ -307,14 +306,7 @@ public class RecipeController extends Controller {
             return(Results.ok( messages.at("Deleted") ) );
         }
 
-
-        /* return Results.created("Recipe created"); */
     }
 
-
-    public Result showIngredientsForRecipe( Long recipe_id )
-    {
-        return(Results.created( "Recipe created" ) );
-    }
 }
 

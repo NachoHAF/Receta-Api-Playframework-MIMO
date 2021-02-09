@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/nacho/Desktop/receta1/conf/routes
-// @DATE:Tue Feb 09 13:14:57 CET 2021
+// @SOURCE:/Users/nacho/Desktop/Receta-api/conf/routes
+// @DATE:Tue Feb 09 15:53:42 CET 2021
 
 import play.api.mvc.Call
 
@@ -11,14 +11,14 @@ import _root_.play.libs.F
 // @LINE:6
 package controllers {
 
-  // @LINE:79
+  // @LINE:76
   class ReverseAssets(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:79
+    // @LINE:76
     def versioned(file:Asset): Call = {
       implicit lazy val _rrc = new play.core.routing.ReverseRouteContext(Map(("path", "/public"))); _rrc
       Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[play.api.mvc.PathBindable[Asset]].unbind("file", file))
@@ -178,44 +178,44 @@ package controllers {
   
   }
 
-  // @LINE:56
+  // @LINE:54
   class ReverseIngredientController(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:59
+    // @LINE:57
     def showIngredients(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "api/1.0/ingredients")
     }
   
-    // @LINE:68
+    // @LINE:66
     def deleteIngredient(ingredient_id:Long): Call = {
       
       Call("DELETE", _prefix + { _defaultPrefix } + "api/1.0/ingredients/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[Long]].unbind("ingredient_id", ingredient_id)))
     }
   
-    // @LINE:74
+    // @LINE:71
     def showRecipesForIngredient(ingredient_id:Long): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "api/1.0/ingredients/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[Long]].unbind("ingredient_id", ingredient_id)) + "/recipes")
     }
   
-    // @LINE:65
+    // @LINE:63
     def updateIngredient(ingredient_id:Long): Call = {
       
       Call("PUT", _prefix + { _defaultPrefix } + "api/1.0/ingredients/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[Long]].unbind("ingredient_id", ingredient_id)))
     }
   
-    // @LINE:56
+    // @LINE:54
     def createIngredient(): Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "api/1.0/ingredients")
     }
   
-    // @LINE:62
+    // @LINE:60
     def showIngredient(ingredient_id:Long): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "api/1.0/ingredients/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[Long]].unbind("ingredient_id", ingredient_id)))

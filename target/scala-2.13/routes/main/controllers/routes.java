@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/nacho/Desktop/receta1/conf/routes
-// @DATE:Tue Feb 09 13:14:57 CET 2021
+// @SOURCE:/Users/nacho/Desktop/Receta-api/conf/routes
+// @DATE:Tue Feb 09 15:53:42 CET 2021
 
 package controllers;
 

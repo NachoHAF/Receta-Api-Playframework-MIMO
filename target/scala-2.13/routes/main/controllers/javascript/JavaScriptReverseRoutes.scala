@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/nacho/Desktop/receta1/conf/routes
-// @DATE:Tue Feb 09 13:14:57 CET 2021
+// @SOURCE:/Users/nacho/Desktop/Receta-api/conf/routes
+// @DATE:Tue Feb 09 15:53:42 CET 2021
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -11,7 +11,7 @@ import _root_.play.libs.F
 // @LINE:6
 package controllers.javascript {
 
-  // @LINE:79
+  // @LINE:76
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -19,7 +19,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:79
+    // @LINE:76
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """
@@ -255,7 +255,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:56
+  // @LINE:54
   class ReverseIngredientController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -263,7 +263,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:59
+    // @LINE:57
     def showIngredients: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.IngredientController.showIngredients",
       """
@@ -273,7 +273,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:68
+    // @LINE:66
     def deleteIngredient: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.IngredientController.deleteIngredient",
       """
@@ -283,7 +283,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:74
+    // @LINE:71
     def showRecipesForIngredient: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.IngredientController.showRecipesForIngredient",
       """
@@ -293,7 +293,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:65
+    // @LINE:63
     def updateIngredient: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.IngredientController.updateIngredient",
       """
@@ -303,7 +303,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:56
+    // @LINE:54
     def createIngredient: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.IngredientController.createIngredient",
       """
@@ -313,7 +313,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:62
+    // @LINE:60
     def showIngredient: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.IngredientController.showIngredient",
       """

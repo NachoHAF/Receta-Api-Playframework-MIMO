@@ -70,11 +70,8 @@ public class CategoryController extends Controller {
 
   public Result showCategories( Http.Request request )
   {
-    List<Category> categoryList =cache.getOrElseUpdate("name",() -> {
-      return Category.allCategories(); },30);
-    //System.out.println("showcategory"+categoryList.toString());
+    List<Category> categoryList =cache.getOrElseUpdate("name", Category::allCategories,30);
     Messages messages = this.messagesApi.preferred(request);
-    //List<Category> categoryList = Category.allCategories();
     if ( Category.allCategories().isEmpty() )
     {
       return(Results.badRequest( messages.at("No_category_list") ) );
