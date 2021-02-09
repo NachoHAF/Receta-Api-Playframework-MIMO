@@ -1,8 +1,8 @@
 [0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
-[0m[[0m[0mdebug[0m] [0m[0m	(/Users/nacho/Desktop/receta/conf/logback.xml,/Users/nacho/Desktop/receta/target/scala-2.13/classes/logback.xml)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	(/Users/nacho/Desktop/receta/conf/messages.zh-CN,/Users/nacho/Desktop/receta/target/scala-2.13/classes/messages.zh-CN)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	(/Users/nacho/Desktop/receta/conf/messages.es,/Users/nacho/Desktop/receta/target/scala-2.13/classes/messages.es)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	(/Users/nacho/Desktop/receta/conf/messages.en,/Users/nacho/Desktop/receta/target/scala-2.13/classes/messages.en)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	(/Users/nacho/Desktop/receta/conf/application.conf,/Users/nacho/Desktop/receta/target/scala-2.13/classes/application.conf)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	(/Users/nacho/Desktop/receta/conf/routes,/Users/nacho/Desktop/receta/target/scala-2.13/classes/routes)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	(/Users/nacho/Desktop/receta/conf/evolutions/default/1.sql,/Users/nacho/Desktop/receta/target/scala-2.13/classes/evolutions/default/1.sql)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/nacho/Desktop/receta1/conf/logback.xml,/Users/nacho/Desktop/receta1/target/scala-2.13/classes/logback.xml)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/nacho/Desktop/receta1/conf/messages.zh-CN,/Users/nacho/Desktop/receta1/target/scala-2.13/classes/messages.zh-CN)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/nacho/Desktop/receta1/conf/messages.es,/Users/nacho/Desktop/receta1/target/scala-2.13/classes/messages.es)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/nacho/Desktop/receta1/conf/messages.en,/Users/nacho/Desktop/receta1/target/scala-2.13/classes/messages.en)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/nacho/Desktop/receta1/conf/application.conf,/Users/nacho/Desktop/receta1/target/scala-2.13/classes/application.conf)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/nacho/Desktop/receta1/conf/routes,/Users/nacho/Desktop/receta1/target/scala-2.13/classes/routes)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/nacho/Desktop/receta1/conf/evolutions/default/1.sql,/Users/nacho/Desktop/receta1/target/scala-2.13/classes/evolutions/default/1.sql)[0m
