@@ -1,24 +1,24 @@
-2021-02-09 15:27:40,412 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-7 - Database [default] initialized
-2021-02-09 15:27:40,416 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-7 - Creating Pool for datasource 'default'
-2021-02-09 15:27:41,325 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-7 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2021-02-21 18:43:33,730 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-7 - Database [default] initialized
+2021-02-21 18:43:33,735 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-7 - Creating Pool for datasource 'default'
+2021-02-21 18:43:35,827 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-7 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
 
-2021-02-09 15:27:41,465 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-7 - Application started (Dev) (no global state)
-2021-02-09 15:53:42,207 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in pool-98-thread-9 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 35000 milliseconds timeout
-2021-02-09 15:53:42,209 [INFO] from play.core.server.AkkaHttpServer in pool-98-thread-9 - Stopping Akka HTTP server...
-2021-02-09 15:53:42,215 [INFO] from play.core.server.AkkaHttpServer in play-dev-mode-akka.actor.internal-dispatcher-12 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
-2021-02-09 15:53:44,844 [INFO] from play.api.db.HikariCPConnectionPool in application-akka.actor.internal-dispatcher-8 - Shutting down connection pool.
-2021-02-09 15:53:45,080 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.internal-dispatcher-18 - Database [default] initialized
-2021-02-09 15:53:45,081 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.internal-dispatcher-18 - Creating Pool for datasource 'default'
-2021-02-09 15:53:45,192 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.internal-dispatcher-18 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2021-02-21 18:43:35,968 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-7 - Application started (Dev) (no global state)
+2021-02-21 18:47:12,896 [INFO] from play.api.db.HikariCPConnectionPool in application-akka.actor.internal-dispatcher-10 - Shutting down connection pool.
+2021-02-21 18:47:13,156 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-13 - Database [default] initialized
+2021-02-21 18:47:13,156 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-13 - Creating Pool for datasource 'default'
+2021-02-21 18:47:13,980 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-13 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
 
-2021-02-09 15:53:45,221 [INFO] from play.api.Play in play-dev-mode-akka.actor.internal-dispatcher-18 - Application started (Dev) (no global state)
-2021-02-09 15:53:45,223 [INFO] from play.api.db.HikariCPConnectionPool in application-akka.actor.internal-dispatcher-2 - Shutting down connection pool.
-2021-02-09 15:53:45,248 [INFO] from play.core.server.AkkaHttpServer in play-dev-mode-akka.actor.internal-dispatcher-18 - Running provided shutdown stop hooks
+2021-02-21 18:47:14,001 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-13 - Application started (Dev) (no global state)
+2021-02-21 18:53:44,105 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in pool-55-thread-5 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 35000 milliseconds timeout
+2021-02-21 18:53:44,105 [INFO] from play.core.server.AkkaHttpServer in pool-55-thread-5 - Stopping Akka HTTP server...
+2021-02-21 18:53:44,106 [INFO] from play.core.server.AkkaHttpServer in play-dev-mode-akka.actor.internal-dispatcher-21 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2021-02-21 18:53:44,114 [INFO] from play.api.db.HikariCPConnectionPool in application-akka.actor.internal-dispatcher-8 - Shutting down connection pool.
+2021-02-21 18:53:44,133 [INFO] from play.core.server.AkkaHttpServer in play-dev-mode-akka.actor.internal-dispatcher-20 - Running provided shutdown stop hooks

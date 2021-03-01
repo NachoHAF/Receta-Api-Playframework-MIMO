@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/nacho/Desktop/Receta-api/conf/routes
-// @DATE:Tue Feb 09 15:53:42 CET 2021
+// @DATE:Sun Feb 21 18:34:36 CET 2021
 
 import play.api.routing.JavaScriptReverseRoute
 

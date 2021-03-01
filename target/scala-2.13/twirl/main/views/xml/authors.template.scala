@@ -50,7 +50,7 @@ Seq[Any](format.raw/*2.1*/("""<?xml version="1.0" enconding="UTF-8"?>
 
               /*
                   -- GENERATED --
-                  DATE: 2021-02-09T15:27:05.671
+                  DATE: 2021-02-21T18:34:36.930
                   SOURCE: /Users/nacho/Desktop/Receta-api/app/views/authors.scala.xml
                   HASH: 7136015f3af3326754ff24dee51431ac65a87b83
                   MATRIX: 909->1|1025->25|1105->80|1142->102|1181->104|1212->110|1247->125|1282->131|1309->132
