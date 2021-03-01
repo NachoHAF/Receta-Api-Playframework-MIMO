@@ -1,3 +1,8 @@
+# Receta-Api-Playframework-MIMO
+Comparando con los requistos de evaluacion, he intentado todos, excepto Composición de acciones, y me parece que los he logrado terminar con exito.
+
+
+
 # Play Receta API para Master MIMO
 
 Prerequisites include:
@@ -30,7 +35,3 @@ To build and run the project:
 
 The Play application responds: `MIMO-Receta-Api`
 
-
-
-
-# Receta-Api-Playframework-MIMO
